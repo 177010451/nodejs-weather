@@ -7,7 +7,7 @@ function getFavourites() {
 	if( email != null && password != null ){
 		$.ajax({
 	        type: "GET",
-			url: "http://localhost:3000/favourite/getList/email=" + email + "&pw=" + password,
+			url: "https://murmuring-garden-23283.herokuapp.com/favourite/getList/email=" + email + "&pw=" + password,
 			format:"jsonp",
 			dataType: "jsonp",
 			beforeSend: function(){	            
@@ -48,7 +48,7 @@ function addFavourites(cityname) {
 	if( email != null && password != null && cityname != null ){
 		$.ajax({
 	        type: "GET",
-			url: "http://localhost:3000/favourite/add/email=" + email + "&pw=" + password + "&cityname=" + cityname,
+			url: "https://murmuring-garden-23283.herokuapp.com/favourite/add/email=" + email + "&pw=" + password + "&cityname=" + cityname,
 			format:"jsonp",
 			dataType: "jsonp",
 			beforeSend: function(){	            
@@ -86,7 +86,7 @@ function removeFavourites(cityname){
 	if( email != null && password != null && cityname != null ){
 		$.ajax({
 	        type: "GET",
-			url: "http://localhost:3000/favourite/remove/email=" + email + "&pw=" + password + "&cityname=" + cityname,
+			url: "https://murmuring-garden-23283.herokuapp.com​/favourite/remove/email=" + email + "&pw=" + password + "&cityname=" + cityname,
 			format:"jsonp",
 			dataType: "jsonp",
 			beforeSend: function(){	            
